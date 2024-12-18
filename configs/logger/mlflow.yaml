@@ -1,0 +1,7 @@
+# MLFlow logger configuration
+_target_: lightning.pytorch.loggers.mlflow.MLFlowLogger
+experiment_name: "dnabert2_experiment"  # Your experiment name
+tracking_uri: ${paths.log_dir}/mlflow/mlruns  # Path to MLflow tracking URI
+prefix: ""
+artifact_location: null
+tags: null

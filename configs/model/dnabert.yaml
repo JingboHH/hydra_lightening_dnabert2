@@ -1,0 +1,4 @@
+_target_: src.models.dnabert_module.DNABERTModule
+model_name_or_path: zhihan1996/DNABERT-2-117M
+learning_rate: 3e-5
+num_labels: 2  # Update based on the classification task

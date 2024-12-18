@@ -1,0 +1,19 @@
+_target_: lightning.pytorch.trainer.Trainer
+
+default_root_dir: ${paths.output_dir}  # Logs and checkpoints directory
+logger: ${logger}
+
+min_epochs: 1
+max_epochs: 5                         # Adjust for your experiments
+
+# Choose the right accelerator
+accelerator: cpu                      # Use `mps` if available on macOS
+devices: 1                            # Number of CPUs or GPUs to use
+precision: 32                         # Use 16-mixed for faster training on GPUs
+
+check_val_every_n_epoch: 1            # Perform validation after every epoch
+
+deterministic: true
+enable_model_summary: true
+enable_progress_bar: true
+enable_checkpointing: true

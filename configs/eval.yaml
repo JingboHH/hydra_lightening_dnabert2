@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - data: dnabert                # Update to DNABERT-specific datamodule
+  - model: dnabert               # Update to DNABERT-specific model
+  - logger: null
+  - trainer: default
+  - paths: default
+  - extras: default
+  - hydra: default
+
+task_name: "eval_dnabert2"
+
+tags: ["dnabert2", "evaluation"]
+
+# Path to the checkpoint file for evaluation
+ckpt_path: /path/to/checkpoint.ckpt  # Replace with the path to your trained checkpoint
